@@ -24,8 +24,11 @@ dependencies {
 	// Spring Data JPA
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
-	// MySQL Driver
-	runtimeOnly 'com.mysql:mysql-connector-j'
+//	// MySQL Driver FOR LOCAL
+//	runtimeOnly 'com.mysql:mysql-connector-j'
+
+	// PostgreSQL Driver FOR PRODUCTION
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
 
 	// Validation
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
